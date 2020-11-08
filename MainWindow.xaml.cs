@@ -1,4 +1,11 @@
-﻿using System;
+﻿/*                      Lab 3: Navigate the World
+ * Najeebulla Hussaini
+ * 100596841
+ * 2020-11-08
+ * Purpose:  keeping track of the owners of the current shares, the number of shares available, the price that a share
+             was sold for (share prices fluctuate)
+ */
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -12,6 +19,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using System.Data.SqlClient;
 
 namespace NETD3202_F2020_LAB3
 {

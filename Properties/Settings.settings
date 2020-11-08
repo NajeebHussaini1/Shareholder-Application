@@ -1,0 +1,12 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="NETD3202_F2020_LAB3.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="connect_string" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename="C:\Users\Najeebulla\Documents\School\Durham College\FALL 2020\NETD II\NETD3202-F2020-LAB3\NavigateTheWorld.mdf";Integrated Security=True</Value>
+    </Setting>
+    <Setting Name="connectString" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename="C:\Users\Najeebulla\Documents\School\Durham College\FALL 2020\NETD II\NETD3202-F2020-LAB3\NavigateTheWorld.mdf";Integrated Security=True</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>
