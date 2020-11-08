@@ -1,0 +1,46 @@
+﻿<Window x:Class="NETD3202_F2020_LAB3.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:NETD3202_F2020_LAB3"
+        mc:Ignorable="d"
+        Title="Navigate The World" Height="600" Width="800">
+    <Grid>
+        <!--allowing the creation of tabs-->
+        <TabControl FontSize="12" SelectionChanged="TabControl_SelectionChanged">
+            <!--Making each individual tab and their headers, this is header for creating an entry-->
+            <TabItem Header="Create Entry">
+                <!--making labels and preferred input types for users in a stack panel-->
+                <StackPanel Orientation="Vertical" Margin="40">
+                    <StackPanel Orientation="Vertical" Margin="20">
+                        <Label Content="Buyer Name:"></Label>
+                        <TextBox x:Name="txtName" Width="200" Background="LightGray" HorizontalAlignment="Left"></TextBox>
+                    </StackPanel>
+                    <StackPanel Orientation="Vertical" Margin="20">
+                        <Label Content="# of Shares:"></Label>
+                        <TextBox x:Name="txtShares" Width="200" Background="LightGray" HorizontalAlignment="Left"></TextBox>
+                    </StackPanel>
+                    <StackPanel Orientation="Vertical" Margin="20">
+                        <Label Content="# of Shares:"></Label>
+                        <DatePicker Name="dtPicker" Background="LightGray" Width="200" HorizontalAlignment="Left"></DatePicker>
+                    </StackPanel>
+                    <StackPanel Orientation="Vertical" Margin="20">
+                        <Label Content="Share Type:"></Label>
+                        <RadioButton Name="radShareTypeCommon" Content="Common" HorizontalAlignment="Left"></RadioButton>
+                        <RadioButton x:Name="radShareTypePreferred" Content="Preferred" HorizontalAlignment="Left"></RadioButton>
+                    </StackPanel>
+                </StackPanel>
+            </TabItem>
+            <!--Making each individual tab and their headers, this is header for view summary-->
+            <TabItem Header="View Summary">
+
+            </TabItem>
+            <!--Making each individual tab and their headers, this is header for view entries-->
+            <TabItem Header="View Entries">
+
+            </TabItem>
+     
+        </TabControl>
+    </Grid>
+</Window>
