@@ -22,23 +22,48 @@
                         <TextBox x:Name="txtShares" Width="200" Background="LightGray" HorizontalAlignment="Left"></TextBox>
                     </StackPanel>
                     <StackPanel Orientation="Vertical" Margin="20">
-                        <Label Content="# of Shares:"></Label>
+                        <Label Content="Date Purchased:"></Label>
                         <DatePicker Name="dtPicker" Background="LightGray" Width="200" HorizontalAlignment="Left"></DatePicker>
                     </StackPanel>
                     <StackPanel Orientation="Vertical" Margin="20">
                         <Label Content="Share Type:"></Label>
-                        <RadioButton Name="radShareTypeCommon" Content="Common" HorizontalAlignment="Left"></RadioButton>
+                        <RadioButton Name="radShareTypeCommon" Content="Common" HorizontalAlignment="Left" IsChecked="True"></RadioButton>
                         <RadioButton x:Name="radShareTypePreferred" Content="Preferred" HorizontalAlignment="Left"></RadioButton>
+                    </StackPanel>
+                    <StackPanel Orientation="Vertical" Margin="20">
+                        <Button x:Name="btnCreateEntry" Content="Create Entry" Width="200" HorizontalAlignment="Left" Click="btnCreateEntry_Click"></Button>
                     </StackPanel>
                 </StackPanel>
             </TabItem>
             <!--Making each individual tab and their headers, this is header for view summary-->
             <TabItem Header="View Summary">
-
+                <StackPanel Orientation="Vertical" Margin="40">
+                    <StackPanel Orientation="Vertical" Margin="20">
+                        <Label Content="# of Common Shares Sold:"></Label>
+                        <TextBox x:Name="txtCommon" Width="200" Background="LightGray" HorizontalAlignment="Left"></TextBox>
+                    </StackPanel>
+                    <StackPanel Orientation="Vertical" Margin="20">
+                        <Label Content="# of Preferred Shares Sold:"></Label>
+                        <TextBox x:Name="txtPreferred" Width="200" Background="LightGray" HorizontalAlignment="Left"></TextBox>
+                    </StackPanel>
+                    <StackPanel Orientation="Vertical" Margin="20">
+                        <Label Content="Revenue Generated:"></Label>
+                        <TextBox x:Name="txtRevenue" Width="200" Background="LightGray" HorizontalAlignment="Left"></TextBox>
+                    </StackPanel>
+                    <StackPanel Orientation="Vertical" Margin="20">
+                        <Label Content="Common Shares Available:"></Label>
+                        <TextBox x:Name="txtCommonAvailable" Width="200" Background="LightGray" HorizontalAlignment="Left"></TextBox>
+                    </StackPanel>
+                    <StackPanel Orientation="Vertical" Margin="20">
+                        <Label Content="Preferred Shares Available:"></Label>
+                        <TextBox x:Name="txtPreferredAvailable" Width="200" Background="LightGray" HorizontalAlignment="Left"></TextBox>
+                    </StackPanel>
+                </StackPanel>
             </TabItem>
             <!--Making each individual tab and their headers, this is header for view entries-->
             <TabItem Header="View Entries">
-
+                <!-- data view -->
+                <DataGrid Name="buyersGrid" />
             </TabItem>
      
         </TabControl>
