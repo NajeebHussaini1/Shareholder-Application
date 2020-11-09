@@ -267,7 +267,7 @@ namespace NETD3202_F2020_LAB3
             double day = (dateExtractedFromDatabase - new DateTime(1990, 1, 1)).TotalDays;
             int days = Convert.ToInt32(day);
             Random rnd = new Random(days);
-            int id = rnd.Next(20, 1000);
+            int id = rnd.Next(20, 500);
             return id;
         }
 
